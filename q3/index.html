@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>טופס בקשת לחש</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>טופס בקשה ללחש אישי</h1>
+    <form id="spellForm" novalidate>
+      <div class="form-group">
+        <label for="fullName">שם מלא:</label>
+        <input type="text" id="fullName" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">דוא"ל:</label>
+        <input type="email" id="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="spellType">סוג לחש:</label>
+        <select id="spellType">
+          <option value="">בחר סוג</option>
+          <option value="התקפי">התקפי</option>
+          <option value="הגנתי">הגנתי</option>
+          <option value="חיזוק">חיזוק</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="knowledge">רמת ידע (1-10):</label>
+        <input type="number" id="knowledge" min="1" max="10">
+      </div>
+
+      <div class="form-group">
+        <label for="wand">האם יש לך שרביט?</label>
+        <select id="wand">
+          <option value="">בחר</option>
+          <option value="true">כן</option>
+          <option value="false">לא</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="attempts">מספר ניסיונות קודמים:</label>
+        <input type="number" id="attempts" min="0" max="20">
+      </div>
+
+      <button type="submit">שלח בקשה</button>
+      <div class="form-group">
+  <a href="view.html" class="view-link">צפה בבקשות שהוגשו</a>
+</div>
+
+
+    </form>
+
+    <div id="messages"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
